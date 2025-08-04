@@ -198,7 +198,7 @@ a {
 
 /* About Section */
 .about {
-  padding: 4rem;
+  padding: 6rem;
   background-color: white;
   text-align: center;
 }
@@ -218,7 +218,7 @@ a {
 
 /* Courses Section */
 .courses {
-  padding: 4rem;
+  padding: 6rem;
   background-color: #f8fafc;
 }
 
@@ -303,7 +303,7 @@ a {
 
 /* Features Section */
 .features {
-  padding: 4rem;
+  padding: 6rem;
   background-color: white;
 }
 
@@ -436,6 +436,7 @@ footer {
 @media (max-width: 768px) {
   header {
     padding: 1rem 2rem;
+    margin-top: 1px;
   }
 
   nav ul {
@@ -466,7 +467,7 @@ footer {
   .about,
   .courses,
   .features {
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
   }
 
   .course-card {
