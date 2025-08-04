@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBEO - CPL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="EduSphere logo with book and graduation cap icon" />
+            <h2>SIBEO</h2>
+        </a>
+        
+        <nav>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#courses">Menu</a></li>
+                <li><a href="index.html#features">Kumpulkan Tugas</a></li>
+                <li><a href="#footer">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="flex items-center justify-between mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">Task Document Viewer</h1>
+            <div class="flex items-center space-x-2">
+                <span id="page-count" class="text-gray-600"></span>
+            </div>
+        </div>
+        
+        <!-- PDF Controls -->
+        <div class="pdf-controls">
+            <button id="prev-page" class="btn btn-primary" style="background-color: #6366f1;"><i class="fa-solid fa-angle-left"></i> Previous</button>
+            <button id="next-page" class="btn btn-primary" style="background-color: #6366f1;">Next <i class="fa-solid fa-angle-right"></i></button>
+            <button id="zoom-in" class="btn btn-primary" style="background-color: #6366f1;"><i class="fa-solid fa-plus"></i> Zoom In</button>
+            <button id="zoom-out" class="btn btn-primary" style="background-color: #6366f1;"><i class="fa-solid fa-minus"></i> Zoom Out</button>
+            <a class="btn btn-primary" style="background-color: #6366f1;" href="CPL Prodi.CPLMK.pdf" download="CPL Prodi CPLMK"><i class="fas fa-download"></i> Download PDF</a>
+        </div>
+        
+        <!-- PDF Viewer -->
+        <div id="pdf-viewer" class="mt-4">
+            <canvas id="pdf-canvas"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer">
+            <div class="footer-column">
+                <h3>SIBEO</h3>
+                <p>Mendukung transformasi pembelajaran melalui sistem digital berbasis Outcome-Based Education</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Akses Cepat</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#courses">Menu</a></li>
+                    <li><a href="#features">Kumpulkan Tugas</a></li>
+                    <li><a href="#footer">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Dukungan</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                    <li><a href="#">Komunitas</a></li>
+                    <li><a href="#">Masukan</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> isma358@ummi.ac.id</li>
+                    <li><i class="fas fa-phone"></i> +6285655158419</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. R. Syamsudin, S.H. No. 50, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SIBEO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script4.js"></script>
+</body>
+</html>

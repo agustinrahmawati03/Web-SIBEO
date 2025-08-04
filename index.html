@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIBEO - SISTEM INFORMASI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="EduSphere logo with book and graduation cap icon" />
+            <h2>SIBEO</h2>
+        </div>
+        
+        <nav>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#courses">Menu</a></li>
+                <li><a href="#features">Kumpulkan Tugas</a></li>
+                <li><a href="#footer">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1>Sistem Informasi Tugas Berbasis OBE : <span class="typing-text" id="typingText"></span></h1>
+                <p>Program Studi Teknologi Informasi Universitas Muhammadiyah Sukabumi 2025</p>
+                <!-- <div class="btn-group">
+                    <button class="btn btn-primary">Explore Courses</button>
+                    <button class="btn btn-outline">Learn More</button>
+                </div> -->
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Diverse group of students studying together in a modern library setting with laptops and books" />
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Tentang Platform Pembelajaran</h2>
+            <p>SIBEO (Sistem Informasi Tugas Berbasis OBE) adalah platform pembelajaran yang dirancang untuk mendukung implementasi Outcome-Based Education (OBE) 
+                pada Program Studi Pendidikan Teknologi Informasi. Sistem ini memudahkan dosen dan mahasiswa dalam menyusun serta mengevaluasi pembelajaran berbasis capaian.
+            </p>
+            <p>SIBEO memiliki tiga menu utama, yaitu RPS Mata Kuliah untuk merancang Rencana Pembelajaran Semester secara terstruktur, 
+                CPL Prodi/CPLMK untuk memetakan capaian pembelajaran program studi dan mata kuliah, serta Instrumen Tugas yang membantu 
+                dosen menyusun tugas sesuai CPMK dan CPL.
+            </p>
+            <p>Melalui SIBEO, diharapkan proses pembelajaran menjadi lebih terarah, efektif, dan mendukung peningkatan mutu pendidikan berbasis OBE.
+            </p>
+        </section>
+
+        <section class="courses" id="courses">
+            <div class="section-title">
+                <h2>Menu Utama</h2>
+                <p>Jelajahi konten pembelajaran unggulan dengan materi yang telah dikurasi oleh para ahli</p>
+            </div>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="images/matakuliah.png" />
+                    <div class="course-info">
+                        <h3>RPS MATA KULIAH</h3>
+                        <p>Menu ini menampilkan form untuk menyusun Rencana Pembelajaran Semester (RPS) secara terstruktur. Di dalamnya tersedia 
+                            isian untuk identitas mata kuliah, CPMK, sub-CPMK, materi, metode, media, dan referensi. Dosen juga dapat mengatur alokasi
+                            waktu setiap pertemuan dan jenis penilaian yang digunakan. Tampilan dirancang agar mudah diisi dan sesuai dengan format RPS berbasis OBE.
+                        </p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="mata_kuliah.html"><i class="fas fa-play-circle"></i> Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/instrumen.png" alt="Modern JavaScript development environment with code examples" />
+                    <div class="course-info">
+                        <h3>CPL PRODI/CPLMK</h3>
+                        <p>Menu ini memuat daftar Capaian Pembelajaran Lulusan (CPL) program studi serta pemetaan keterkaitannya dengan Capaian 
+                            Pembelajaran Mata Kuliah (CPMK). Pengguna dapat melihat tabel pemetaan yang menampilkan hubungan antara CPL dan CPMK 
+                            dalam bentuk checklist atau nilai bobot.
+                        </p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="instrumen_tugas.html"><i class="fas fa-play-circle"></i> Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="images/cpl.png" alt="Modern JavaScript development environment with code examples" />
+                    <div class="course-info">
+                        <h3>INSTRUMEN TUGAS</h3>
+                        <p>Tampilan ini menyajikan instrumen tugas berbasis Outcome-Based Education (OBE) yang dirancang untuk membantu mahasiswa 
+                            dalam menyusun tugas secara terarah dan sesuai dengan capaian pembelajaran yang ditetapkan. Melalui fitur ini, mahasiswa 
+                            dapat memahami keterkaitan antara tugas yang dikerjakan dengan CPMK dan CPL, sehingga proses belajar menjadi lebih bermakna, 
+                            terukur, dan berorientasi pada hasil.
+                        </p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="cpl.html"><i class="fas fa-play-circle"></i> Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-title">
+                <h2>Kumpulkan Tugas</h2>
+                <p>Anda dapat mengumpulkan tugas melalui LMS UMMI dengan mengklik 
+                    tombol di bawah ini. Setelah diklik, Anda akan diarahkan langsung ke LMS UMMI 
+                    untuk mengunggah tugas Anda.</p>
+            </div>
+            <div class="features-container">
+                <div class="feature-card">
+                    <h3 class="btn-link">
+                        <a href="https://lms.ummi.ac.id/student" target="_blank">
+                            Kumpulkan Disini
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer">
+            <div class="footer-column">
+                <h3>SIBEO</h3>
+                <p>Mendukung transformasi pembelajaran melalui sistem digital berbasis Outcome-Based Education</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Akses Cepat</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#courses">Menu</a></li>
+                    <li><a href="#features">Kumpulkan Tugas</a></li>
+                    <li><a href="#footer">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Dukungan</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                    <li><a href="#">Komunitas</a></li>
+                    <li><a href="#">Masukan</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> isma358@ummi.ac.id</li>
+                    <li><i class="fas fa-phone"></i> +6285655158419</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. R. Syamsudin, S.H. No. 50, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SIBEO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
